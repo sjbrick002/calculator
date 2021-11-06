@@ -1,0 +1,54 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 0, 30);
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+.case {
+    margin: auto;
+
+    background-color: green;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: center;
+
+    width: 20vw;
+    height: 50vh;
+}
+
+.display{
+    margin: 1em;
+    padding: 0 0.3em;
+
+    background-color: snow;
+    width: 90%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: baseline;
+}
+
+.calc-buttons {
+    margin: 1em;
+
+    width: 80%;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    
+}
