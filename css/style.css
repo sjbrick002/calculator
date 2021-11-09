@@ -16,7 +16,7 @@ body {
 }
 
 .case {
-    margin: auto;
+    margin: 50px auto;
 
     background-color: green;
 
@@ -26,29 +26,106 @@ body {
     align-items: center;
 
     width: 20vw;
+    min-width: 300px;
     height: 50vh;
 }
 
 .display{
     margin: 1em;
-    padding: 0 0.3em;
+    /*padding: 0 0.3em;*/
 
     background-color: snow;
     width: 90%;
+    height: 30%;
 
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: flex-end;
-    align-items: baseline;
+    align-items: flex-start;
 }
 
 .calc-buttons {
     margin: 1em;
 
     width: 80%;
+    height: 60%;
 
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    
+    gap: 0.4rem;
+    grid-template-areas: 
+    "clear division multiplication subtraction"
+    "seven eight nine addition"
+    "four five six addition"
+    "one two three equals"
+    "squat squat period equals";
+}
+
+.clear {
+    grid-area: clear;
+}
+
+.division {
+    grid-area: division;
+}
+
+.multiplicaion {
+    grid-area: multiplication;
+}
+
+.subtraction {
+    grid-area: subtraction;
+}
+
+.seven {
+    grid-area: seven;
+}
+
+.eight {
+    grid-area: eight;
+}
+
+.nine {
+    grid-area: nine;
+}
+
+.four {
+    grid-area: four;
+}
+
+.five {
+    grid-area: five;
+}
+
+.six {
+    grid-area: six;
+}
+
+.addition {
+    grid-area: addition;
+}
+
+.one {
+    grid-area: one;
+}
+
+.two {
+    grid-area: two;
+}
+
+.three {
+    grid-area: three;
+}
+
+.zero {
+    grid-area: squat;
+}
+
+.decimal {
+    grid-area: period;
+}
+
+.operate-btn {
+    grid-area: equals;
 }
