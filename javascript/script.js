@@ -16,17 +16,22 @@ function operate(num1, num2, operation) {
 };
 
 
-let firstNumber;
-let operator;
-let secondNumber;
+let firstNumber = null;
+let operator = null;
+let secondNumber = null;
 let answer;
 
 
-display = document.querySelector(".display")
+//display = document.querySelector(".display")
+firstValue = document.querySelector(".first-value");
+operatorValue = document.querySelector(".operator-value");
+secondValue = document.querySelector(".second-value");
 
 clearBtn = document.querySelector(".clear");
 clearBtn.addEventListener("click", () => {
-    display.textContent = "";
+    firstValue.textContent = "";
+    operatorValue.textContent = "";
+    secondValue.textContent = "";
     firstNumber = null;
     secondNumber = null;
     answer = null;
@@ -35,68 +40,168 @@ clearBtn.addEventListener("click", () => {
 
 divisionBtn = document.querySelector(".division");
 divisionBtn.addEventListener("click", () => {
-    firstNumber = Number(display.textContent);
+    firstNumber = Number(firstValue.textContent);
     console.log(firstNumber);
-    display.textContent = "";
+    operatorValue.textContent = "/";
     operator = quotient;
 });
 
 multiplicationBtn = document.querySelector(".multiplication");
 multiplicationBtn.addEventListener("click", () => {
-    firstNumber = Number(display.textContent);
+    firstNumber = Number(firstValue.textContent);
     console.log(firstNumber);
-    display.textContent = "";
+    operatorValue.textContent = "*";
     operator = product;
 });
 
 subtractionBtn = document.querySelector(".subtraction");
 subtractionBtn.addEventListener("click", () => {
-    firstNumber = Number(display.textContent);
+    firstNumber = Number(firstValue.textContent);
     console.log(firstNumber);
-    display.textContent = "";
+    operatorValue.textContent = "-";
     operator = difference;
 });
 
 sevenBtn = document.querySelector(".seven");
-sevenBtn.addEventListener("click", () => display.textContent += 7);
+sevenBtn.addEventListener("click", () => {
+    if (operator === null) {
+        if (firstValue.textContent === "0") {
+            firstValue.textContent = 7;
+        } else {
+            firstValue.textContent += 7;
+        };
+    } else {
+        secondValue.textContent += 7;
+    };
+});
 
 eightBtn = document.querySelector(".eight");
-eightBtn.addEventListener("click", () => display.textContent += 8);
+eightBtn.addEventListener("click", () => {
+    if (operator === null) {
+        if (firstValue.textContent === "0") {
+            firstValue.textContent = 8;
+        } else {
+            firstValue.textContent += 8;
+        };
+    } else {
+        secondValue.textContent += 8;
+    };
+});
 
 nineBtn = document.querySelector(".nine");
-nineBtn.addEventListener("click", () => display.textContent += 9);
+nineBtn.addEventListener("click", () => {
+    if (operator === null) {
+        if (firstValue.textContent === "0") {
+            firstValue.textContent = 9;
+        } else {
+            firstValue.textContent += 9;
+        };
+    } else {
+        secondValue.textContent += 9;
+    };
+});
 
 fourBtn = document.querySelector(".four");
-fourBtn.addEventListener("click", () => display.textContent += 4);
+fourBtn.addEventListener("click", () => {
+    if (operator === null) {
+        if (firstValue.textContent === "0") {
+            firstValue.textContent = 4;
+        } else {
+            firstValue.textContent += 4;
+        };
+    } else {
+        secondValue.textContent += 4;
+    };
+});
 
 fiveBtn = document.querySelector(".five");
-fiveBtn.addEventListener("click", () => display.textContent += 5);
+fiveBtn.addEventListener("click", () => {
+    if (operator === null) {
+        if (firstValue.textContent === "0") {
+            firstValue.textContent = 5;
+        } else {
+            firstValue.textContent += 5;
+        };
+    } else {
+        secondValue.textContent += 5;
+    };
+});
 
 sixBtn = document.querySelector(".six");
-sixBtn.addEventListener("click", () => display.textContent += 6);
+sixBtn.addEventListener("click", () => {
+    if (operator === null) {
+        if (firstValue.textContent === "0") {
+            firstValue.textContent = 6;
+        } else {
+            firstValue.textContent += 6;
+        };
+    } else {
+        secondValue.textContent += 6;
+    };
+});
 
 additionBtn = document.querySelector(".addition");
 additionBtn.addEventListener("click", () => {
-    firstNumber = Number(display.textContent);
+    firstNumber = Number(firstValue.textContent);
     console.log(firstNumber);
-    display.textContent = "";
+    operatorValue.textContent = "+";
     operator = sum;
 });
 
 oneBtn = document.querySelector(".one");
-oneBtn.addEventListener("click", () => display.textContent += 1);
+oneBtn.addEventListener("click", () => {
+    if (operator === null) {
+        if (firstValue.textContent === "0") {
+            firstValue.textContent = 1;
+        } else {
+            firstValue.textContent += 1;
+        };
+    } else {
+        secondValue.textContent += 1;
+    };
+});
 
 twoBtn = document.querySelector(".two");
-twoBtn.addEventListener("click", () => display.textContent += 2);
+twoBtn.addEventListener("click", () => {
+    if (operator === null) {
+        if (firstValue.textContent === "0") {
+            firstValue.textContent = 2;
+        } else {
+            firstValue.textContent += 2;
+        };
+    } else {
+        secondValue.textContent += 2;
+    };
+});
 
 threeBtn = document.querySelector(".three");
-threeBtn.addEventListener("click", () => display.textContent += 3);
+threeBtn.addEventListener("click", () => {
+    if (operator === null) {
+        if (firstValue.textContent === "0") {
+            firstValue.textContent = 3;
+        } else {
+            firstValue.textContent += 3;
+        };
+    } else {
+        secondValue.textContent += 3;
+    };
+});
 
 zeroBtn = document.querySelector(".zero");
-zeroBtn.addEventListener("click", () => display.textContent += 0);
+zeroBtn.addEventListener("click", () => {
+    if (operator === null) {
+        if (firstValue.textContent === "0") {
+            firstValue.textContent = 0;
+        } else {
+            firstValue.textContent += 0;
+        };
+    } else {
+        secondValue.textContent += 0;
+    };
+});
 
 decimalBtn = document.querySelector(".decimal");
-decimalBtn.addEventListener("click", () => display.textContent += ".");
+//decimalBtn.addEventListener("click", () => display.textContent += ".");
 
 operateBtn = document.querySelector(".operate-btn");
 operateBtn.addEventListener("click", () => {
