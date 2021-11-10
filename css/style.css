@@ -18,7 +18,7 @@ body {
 .case {
     margin: 50px auto;
 
-    background-color: green;
+    background-color: #562C19;
 
     display: flex;
     flex-flow: column nowrap;
@@ -26,17 +26,20 @@ body {
     align-items: center;
 
     width: 20vw;
-    min-width: 300px;
-    height: 50vh;
+    min-width: 350px;
+    height: 70vh;
+    min-height: 440px;
 }
 
 .display{
-    margin: 1em;
-    /*padding: 0 0.3em;*/
+    margin: 1rem;
+    padding: 0.1em 0.3em;
 
-    background-color: snow;
+    background-color: #DFF5F5;
     width: 90%;
     height: 30%;
+
+    font-size: 2em;
 
     display: flex;
     flex-flow: row wrap;
@@ -47,7 +50,7 @@ body {
 .calc-buttons {
     margin: 1em;
 
-    width: 80%;
+    width: 90%;
     height: 60%;
 
     display: grid;
@@ -59,73 +62,113 @@ body {
     "seven eight nine addition"
     "four five six addition"
     "one two three equals"
-    "squat squat period equals";
+    "squat period negative equals";
 }
 
 .clear {
     grid-area: clear;
+    background-color: #15AA08;
+    color: white;
 }
 
 .division {
     grid-area: division;
+    background-color: #227B1A;
+    color: white;
 }
 
-.multiplicaion {
+.multiplication {
     grid-area: multiplication;
+    background-color: #227B1A;
+    color: white;
 }
 
 .subtraction {
     grid-area: subtraction;
+    background-color: #227B1A;
+    color: white;
 }
 
 .seven {
     grid-area: seven;
+    background-color: #666966;
+    color: white;
 }
 
 .eight {
     grid-area: eight;
+    background-color: #666966;
+    color: white;
 }
 
 .nine {
     grid-area: nine;
+    background-color: #666966;
+    color: white;
 }
 
 .four {
     grid-area: four;
+    background-color: #666966;
+    color: white;
 }
 
 .five {
     grid-area: five;
+    background-color: #666966;
+    color: white;
 }
 
 .six {
     grid-area: six;
+    background-color: #666966;
+    color: white;
 }
 
 .addition {
     grid-area: addition;
+    background-color: #227B1A;
+    color: white;
 }
 
 .one {
     grid-area: one;
+    background-color: #666966;
+    color: white;
 }
 
 .two {
     grid-area: two;
+    background-color: #666966;
+    color: white;
 }
 
 .three {
     grid-area: three;
+    background-color: #666966;
+    color: white;
 }
 
 .zero {
     grid-area: squat;
+    background-color: #666966;
+    color: white;
+}
+
+.negative {
+    grid-area: negative;
+    background-color: #666966;
+    color: white;
 }
 
 .decimal {
     grid-area: period;
+    background-color: #666966;
+    color: white;
 }
 
 .operate-btn {
     grid-area: equals;
+    background-color: #227B1A;
+    color: white;
 }
