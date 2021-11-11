@@ -29,7 +29,7 @@ secondValue = document.querySelector(".second-value");
 
 clearBtn = document.querySelector(".clear");
 clearBtn.addEventListener("click", () => {
-    firstValue.textContent = "";
+    firstValue.textContent = "0";
     operatorValue.textContent = "";
     secondValue.textContent = "";
     firstNumber = null;
@@ -41,7 +41,14 @@ clearBtn.addEventListener("click", () => {
 divisionBtn = document.querySelector(".division");
 divisionBtn.addEventListener("click", () => {
     firstNumber = Number(firstValue.textContent);
-    console.log(firstNumber);
+    if (secondValue.textContent) {
+
+        secondNumber = Number(secondValue.textContent);
+        answer = operate(firstNumber, secondNumber, operator);
+
+        firstValue.textContent = answer;
+        secondValue.textContent = "";
+    };
     operatorValue.textContent = "/";
     operator = quotient;
 });
@@ -49,18 +56,34 @@ divisionBtn.addEventListener("click", () => {
 multiplicationBtn = document.querySelector(".multiplication");
 multiplicationBtn.addEventListener("click", () => {
     firstNumber = Number(firstValue.textContent);
-    console.log(firstNumber);
+    if (secondValue.textContent) {
+
+        secondNumber = Number(secondValue.textContent);
+        answer = operate(firstNumber, secondNumber, operator);
+
+        firstValue.textContent = answer;
+        secondValue.textContent = "";
+    };
     operatorValue.textContent = "*";
     operator = product;
 });
 
+
 subtractionBtn = document.querySelector(".subtraction");
 subtractionBtn.addEventListener("click", () => {
     firstNumber = Number(firstValue.textContent);
-    console.log(firstNumber);
+    if (secondValue.textContent) {
+
+        secondNumber = Number(secondValue.textContent);
+        answer = operate(firstNumber, secondNumber, operator);
+
+        firstValue.textContent = answer;
+        secondValue.textContent = "";
+    };
     operatorValue.textContent = "-";
     operator = difference;
 });
+
 
 sevenBtn = document.querySelector(".seven");
 sevenBtn.addEventListener("click", () => {
@@ -143,10 +166,18 @@ sixBtn.addEventListener("click", () => {
 additionBtn = document.querySelector(".addition");
 additionBtn.addEventListener("click", () => {
     firstNumber = Number(firstValue.textContent);
-    console.log(firstNumber);
+    if (secondValue.textContent) {
+
+        secondNumber = Number(secondValue.textContent);
+        answer = operate(firstNumber, secondNumber, operator);
+
+        firstValue.textContent = answer;
+        secondValue.textContent = "";
+    };
     operatorValue.textContent = "+";
     operator = sum;
 });
+
 
 oneBtn = document.querySelector(".one");
 oneBtn.addEventListener("click", () => {
@@ -205,9 +236,12 @@ decimalBtn = document.querySelector(".decimal");
 
 operateBtn = document.querySelector(".operate-btn");
 operateBtn.addEventListener("click", () => {
-    secondNumber = Number(display.textContent);
-    console.log(secondNumber);
+    firstNumber = Number(firstValue.textContent);
+    secondNumber = Number(secondValue.textContent);
     answer = operate(firstNumber, secondNumber, operator);
-    console.log(answer);
-    display.textContent = answer;
+    operator = null;
+
+    firstValue.textContent = answer;
+    operatorValue.textContent = "";
+    secondValue.textContent = "";
 });
