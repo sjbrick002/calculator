@@ -9,6 +9,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: rgb(0, 0, 30);
+    font-family: sans-serif;
 }
 
 *, *::before, *::after {
@@ -74,106 +75,124 @@ body {
     grid-area: clear;
     background-color: #15AA08;
     color: white;
+    font-size: 1.5em;
 }
 
 .division {
     grid-area: division;
     background-color: #227B1A;
     color: white;
+    font-size: 1.5em;
 }
 
 .multiplication {
     grid-area: multiplication;
     background-color: #227B1A;
     color: white;
+    font-size: 1.5em;
 }
 
 .subtraction {
     grid-area: subtraction;
     background-color: #227B1A;
     color: white;
+    font-size: 1.5em;
 }
 
 .seven {
     grid-area: seven;
     background-color: #666966;
     color: white;
+    font-size: 1.5em;
 }
 
 .eight {
     grid-area: eight;
     background-color: #666966;
     color: white;
+    font-size: 1.5em;
 }
 
 .nine {
     grid-area: nine;
     background-color: #666966;
     color: white;
+    font-size: 1.5em;
 }
 
 .four {
     grid-area: four;
     background-color: #666966;
     color: white;
+    font-size: 1.5em;
 }
 
 .five {
     grid-area: five;
     background-color: #666966;
     color: white;
+    font-size: 1.5em;
 }
 
 .six {
     grid-area: six;
     background-color: #666966;
     color: white;
+    font-size: 1.5em;
 }
 
 .addition {
     grid-area: addition;
     background-color: #227B1A;
     color: white;
+    font-size: 1.5em;
 }
 
 .one {
     grid-area: one;
     background-color: #666966;
     color: white;
+    font-size: 1.5em;
 }
 
 .two {
     grid-area: two;
     background-color: #666966;
     color: white;
+    font-size: 1.5em;
 }
 
 .three {
     grid-area: three;
     background-color: #666966;
     color: white;
+    font-size: 1.5em;
 }
 
 .zero {
     grid-area: squat;
     background-color: #666966;
     color: white;
-}
-
-.negative {
-    grid-area: negative;
-    background-color: #666966;
-    color: white;
+    font-size: 1.5em;
 }
 
 .decimal {
     grid-area: period;
     background-color: #666966;
     color: white;
+    font-size: 1.5em;
+}
+
+.negative {
+    grid-area: negative;
+    background-color: #666966;
+    color: white;
+    font-size: 1.5em;
 }
 
 .operate-btn {
     grid-area: equals;
     background-color: #227B1A;
     color: white;
+    font-size: 1.5em;
 }
